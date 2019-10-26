@@ -1,26 +1,51 @@
-import React from 'react';
-import logo from './logo.svg';
+import React, { Component } from 'react';
 import './App.css';
+import MultiSelectDropdown from './multi-select-dropdown';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+class App extends Component {
+
+  state = {
+    selected: []
+  }
+
+  options = [
+    {
+      name: 'option 1',
+      id: '1'
+    },
+    {
+      name: 'option 2',
+      id: '2'
+    },
+    {
+      name: 'option 3',
+      id: '3'
+    },
+    {
+      name: 'option 4',
+      id: '4'
+    }
+  ];
+
+  getSelected = selected => {
+    this.setState({
+      selected: selected
+    })
+  }
+
+  render() {
+    return (
+      <div className="App border" style={{ width: '300px', margin: '0 auto' }}>
+        <MultiSelectDropdown options={this.options} getSelected={this.getSelected} />
+        <br />
+        <hr />
+        <p>Selected: </p>
+        {this.state.selected.map((value, key) => (
+          <p key={key}>{value.name}</p>
+        ))}
+      </div>
+    );
+  }
 }
 
 export default App;

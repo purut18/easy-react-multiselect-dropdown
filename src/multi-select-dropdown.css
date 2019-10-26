@@ -1,0 +1,48 @@
+.select-div {
+    text-align: left;
+    border: none;
+}
+input {
+    height: 30px;
+    border: none;
+    width: 90%;
+    /* border-bottom: 2px solid #aaa; */
+    background: transparent;
+    margin-bottom: 3px;
+}
+input:focus {
+    border: none;
+}
+.options {
+    width: 90%;
+    background: white;
+    border: 1px solid #aaa;
+}
+.options li {
+    list-style: none;
+    padding: 10px 0 10px 5px;
+}
+.options li:hover {
+    background: #ccc;
+    cursor: pointer;
+}
+.selected {
+    width: 90%;
+}
+.selected p {
+    background: #9f00e9;
+    color: white;
+    padding: 10px;
+    margin: 5px;
+    border-radius: 20px;
+    display: inline-block;
+}
+
+.selected p span {
+    background: #5e3870;
+    margin-left: 10px;
+    cursor: pointer;
+    padding: 0 4px 2px 4px;
+    border-radius: 50%;
+    opacity: 0.8;
+}
