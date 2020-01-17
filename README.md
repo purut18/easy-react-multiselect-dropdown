@@ -18,4 +18,7 @@ Use Tag `<MultiSelectDropdown />`
 
 4) (optional) bgColor: string to specify the background color of the option selected (defaults to '#9f00e9')
 
+## Example:
+
+(https://github.com/purut18/easy-react-multiselect-dropdown/blob/master/Screenshot%20from%202020-01-17%2017-50-04.png)
 
