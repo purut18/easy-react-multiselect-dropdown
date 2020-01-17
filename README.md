@@ -20,5 +20,5 @@ Use Tag `<MultiSelectDropdown />`
 
 ## Example:
 
-(https://raw.githubusercontent.com/purut18/easy-react-multiselect-dropdown/master/Screenshot%20from%202020-01-17%2017-50-04.png)
+![Example React Multi Select Dropdown Component](https://raw.githubusercontent.com/purut18/easy-react-multiselect-dropdown/master/Screenshot%20from%202020-01-17%2017-50-04.png)
 
