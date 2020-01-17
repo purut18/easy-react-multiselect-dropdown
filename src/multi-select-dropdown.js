@@ -30,7 +30,6 @@ class MultiSelectDropdown extends Component {
     }
 
     blurHandle = () => {
-        console.log('something');
         this.setState({
             searchRes: []
         });
@@ -85,7 +84,7 @@ class MultiSelectDropdown extends Component {
                 <form onBlur={this.blurHandle}>
                     <div className="selected">
                         {this.state.selected.map((value, key) => (
-                            <p key={key}>{value.name} <span onClick={() => this.removeHandle(value.id, value.name)}>&#215;</span></p>
+                            <p key={key}>{value.name} style={{backgroundColor: this.props.bgColor ? this.props.bgColor : '#9f00e9', color: this.props.color ? this.props.color : 'white'}} <span onClick={() => this.removeHandle(value.id, value.name)}>&#215;</span></p>
                         ))}
                     </div>
                     <input type="text" placeholder="Search" onChange={this.searchHandle} />
@@ -94,11 +93,6 @@ class MultiSelectDropdown extends Component {
                             <li onMouseDown={() => this.selectHandle(value.id, value.name)} value={value.id} key={key}>{value.name}</li>
                         ))}
                     </div>
-                    {/* <select name="multi-select">
-                        {this.state.searchRes.map((value,key) => (
-                            <option value={value.id} key={key}>{value.name}</option>
-                        ))}
-                    </select> */}
                 </form>
             </div>
         );

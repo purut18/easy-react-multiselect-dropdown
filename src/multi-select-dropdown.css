@@ -30,7 +30,6 @@ input:focus {
     width: 90%;
 }
 .selected p {
-    background: #9f00e9;
     color: white;
     padding: 10px;
     margin: 5px;
